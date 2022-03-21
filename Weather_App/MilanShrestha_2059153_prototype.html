@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Weather App</title>
+<link  href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"   rel="stylesheet"/>
+<style>
+
+      /*--body--*/
+body{
+background:#0b4d55;
+}
+/*-- boxes*/
+.boxes{
+background:black;
+margin: auto;
+margin-top:150px;
+width: 30%;
+height:500px;
+border: 3px solid black;
+padding: 10px;
+border-radius:9%;
+line-height:30px;
+color:white;
+animation: mymove 5s infinite;
+
+}
+
+
+/*--Boxshadow-*/
+@keyframes mymove {
+50% {box-shadow: 25px 25px 30px black;}
+
+}
+
+/*-- class abc --*/
+.abc{
+margin-top:75px;
+text-align: center;
+font-family: sans-serif;
+margin-left: 20px;
+font-size:50px;
+
+}
+/*-- Id --*/
+#humid,#Winds,#Tempr,#pressu,#temperr,#descrip,#date{
+
+font-size:20px;
+font-family: sans-serif;
+text-align: center;
+
+
+}
+
+/*--icons--*/
+
+#icons{
+ margin-left: 200px;
+}
+
+/*--h2--*/
+h2{ 
+margin-top:20px;
+font-size:30px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+
+</style>
+
+</head>
+<body>
+      <div class="boxes">
+      <h1 class="abc">Weather App</h1>
+      <!--City name-->
+      <h2 id ="favsss">London</h2>
+      <!-- actual temperature-->
+      <div id="temperr">---</div>
+      <!--icon of weather depending on situation-->
+      <img src="https://openweathermap.org/img/wn/10d.png" id="icons">
+
+      <!--description of weather-->
+      <div id="descrip">----</div>
+      <div id="humid">----</div>
+      <div id="Winds"> ----</div>
+      <div id="pressu">-----</div>
+      <div id="Tempr">----</div>
+      <div id="date"></div>
+    
+      </div>
+      </div>
+
+<!--linking javascript-->
+
+<script src="MilanShrestha_2059153-1.js"></script>
+</body>
+</html>
